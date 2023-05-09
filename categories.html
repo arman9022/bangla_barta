@@ -47,6 +47,20 @@
 
 	<body>
 
+		<!-- Show Hide Modal -->
+		<div class="modal fade" id="AutoLoadAutoCloseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img src="https://www.emythmaker.com/project/Template/NewsProtal/BanglaBartaBD/Demo-02/media/imgAll/hasia-2-20221103121856.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+			</div>
+		</div>
+
 		<div id="fb-root"></div>
 		
 		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=2689491844415645&autoLogAppEvents=1"></script>
@@ -249,6 +263,16 @@
 		<main style="min-height: 100vh;">
 			<div class="container">
 				<div class="row">
+
+
+				<!-- ========== Advertisement ========== -->
+				<div class="MiddleAdd MobileHide">
+					<a href=""><img src="https://www.emythmaker.com/project/Template/NewsProtal/BanglaBartaBD/Demo-02/media/Advertisement/Advertisement(970X90).png" alt="Middle Advertisement" title="Middle Advertisement" class="img-fluid img100"></a>
+				</div>
+				<div class="MiddleAddSM MobileMenuShow">
+					<a href=""><img src="https://www.emythmaker.com/project/Template/NewsProtal/BanglaBartaBD/Demo-02/media/Advertisement/Advertisement(300X90).png" alt="Middle Advertisement Mobile" title="Middle Advertisement Mobile" class="img-fluid img100"></a>
+				</div>
+
 					<div class="col-lg-8 col-12">
 						<div class="DNewyork">
 							<div class="row">
@@ -491,7 +515,18 @@
 			});
 		</script>
 		<script type="text/javascript" src="https://www.emythmaker.com/project/Template/NewsProtal/BanglaBartaBD/Demo-02/jQuery.loadScroll.js"></script>
-
+		<!-- Show Hide Modal -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			  $('#AutoLoadAutoCloseModal').modal('show');
+			  setTimeout(function() {
+				$('#AutoLoadAutoCloseModal').modal('hide');
+			  }, 2000);
+			});
+		</script>
+		
 	</body>
 
 </html>

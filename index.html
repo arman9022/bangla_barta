@@ -530,7 +530,8 @@
 					</div>
 					<div class="col-lg-4 col-12 colresize" style="width:26%;">
 						<section class="DLPSTab2">
-							<div class="panel panel-default">
+
+							<!-- <div class="panel panel-default">
 								<div class="panel-heading">
 									<ul class="nav nav-tabs" role="tablist">
 										<li class="nav-item">
@@ -574,7 +575,62 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
+
+							<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+								<style>
+									.nav-link {
+										display: block;
+										padding: .5rem 3rem;
+										color: black;
+										text-decoration: none;
+										transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+									}									
+									.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+										color: #fff;
+										background-color: #366129;
+										border-radius: 0;
+									}
+								</style>
+								<li class="nav-item" role="presentation">
+								  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">সর্বশেষ</button>
+								</li>
+								<li class="nav-item" role="presentation">
+								  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">জনপ্রিয়</button>
+								</li>
+							  </ul>
+							  <div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" style="height: 65vh; overflow-y: scroll;">
+									<ul class="LatestList2">
+										<li><a href=""><p>বাংলাদেশ ও ভারতের মধ্যে ৫টি সমঝোতা স্মারক স্বাক্ষর</p></a></li>
+										<li><a href=""><p>মিয়ানমারে একদিনেই ৯০ জনের বেশি বিক্ষোভকারী নিহত</p></a></li>
+										<li><a href=""><p>নরেন্দ্র মোদির বাংলাদেশ সফরের সমাপ্তি</p></a></li>
+										<li><a href=""><p>সোনার বাংলায় ইট-পাটকেল নিক্ষেপ, ঢাকা-চট্টগ্রাম ট্রেন চলাচল বন্ধ</p></a></li>
+										<li><a href=""><p>ব্রাহ্মণবাড়িয়ায় হরতালের সমর্থনে শহরের বিভিন্ন পয়েন্টে অবস্থান নিয়েছে হেফাজতের কর্মীরা</p></a></li>
+										<li><a href=""><p>গুলিবর্ষণে একদিনেই নিহত ১১৪, রক্তাক্ত মিয়ানমারের রাজপথ</p></a></li>
+										<li><a href=""><p>বাংলাদেশ ও ভারতের মধ্যে ৫টি সমঝোতা স্মারক স্বাক্ষর</p></a></li>
+										<li><a href=""><p>হরতালে স্বাভাবিক রয়েছে চট্টগ্রাম, আইনশৃঙ্খলা বাহিনীর সতর্ক অবস্থান </p></a></li>
+										<li><a href=""><p>ভারতে টিকা রপ্তানি স্থগিত হওয়ায় চীনের দিকে ঝুঁকছে উন্নয়নশীল বিশ্ব</p></a></li>
+										<li><a href=""><p>ফেসবুকে ব্যবসা করতেও শিগগিরই ট্রেড লাইসেন্স লাগবে</p></a></li>
+										
+									</ul>
+								</div>
+								<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0" style="height: 65vh; overflow-y: scroll;">
+									<ul class="LatestList2">
+										<li><a href=""><p>গুলিবর্ষণে একদিনেই নিহত ১১৪, রক্তাক্ত মিয়ানমারের রাজপথ</p></a></li>
+										<li><a href=""><p>বাংলাদেশ ও ভারতের মধ্যে ৫টি সমঝোতা স্মারক স্বাক্ষর</p></a></li>
+										<li><a href=""><p>হরতালে স্বাভাবিক রয়েছে চট্টগ্রাম, আইনশৃঙ্খলা বাহিনীর সতর্ক অবস্থান </p></a></li>
+										<li><a href=""><p>ভারতে টিকা রপ্তানি স্থগিত হওয়ায় চীনের দিকে ঝুঁকছে উন্নয়নশীল বিশ্ব</p></a></li>
+										<li><a href=""><p>ফেসবুকে ব্যবসা করতেও শিগগিরই ট্রেড লাইসেন্স লাগবে</p></a></li>
+										<li><a href=""><p>বাংলাদেশ ও ভারতের মধ্যে ৫টি সমঝোতা স্মারক স্বাক্ষর</p></a></li>
+										<li><a href=""><p>মিয়ানমারে একদিনেই ৯০ জনের বেশি বিক্ষোভকারী নিহত</p></a></li>
+										<li><a href=""><p>নরেন্দ্র মোদির বাংলাদেশ সফরের সমাপ্তি</p></a></li>
+										<li><a href=""><p>সোনার বাংলায় ইট-পাটকেল নিক্ষেপ, ঢাকা-চট্টগ্রাম ট্রেন চলাচল বন্ধ</p></a></li>
+										<li><a href=""><p>ব্রাহ্মণবাড়িয়ায় হরতালের সমর্থনে শহরের বিভিন্ন পয়েন্টে অবস্থান নিয়েছে হেফাজতের কর্মীরা</p></a></li>
+									</ul>
+								</div>
+							  </div>
+
 							<div class="allnews"><a href="#">সব খবর</a></div>
 						</section>
 					</div>
